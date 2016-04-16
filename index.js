@@ -4,7 +4,7 @@ module.exports = function (arr, funk, onEnd, time) {
     funk(arr[i++])
     if (i >= arr.length) {
       clearInterval(interval)
-      oneEnd()
+      onEnd()
     }
   }, time)
 }
